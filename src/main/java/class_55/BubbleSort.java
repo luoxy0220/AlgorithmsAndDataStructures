@@ -1,7 +1,9 @@
-package sort;
+package class_55;
 
 /**
- * 冒泡排序，基本思路是通过不断交换相邻的元素，
+ * @Date: 2023/4/18 23:08
+ * @Author: Sean Luo
+ * @Description: 冒泡排序，基本思路是通过不断交换相邻的元素，
  * 将大的元素逐渐“沉”到数组的底部，而小的元素则“浮”到数组的顶部。
  */
 public class BubbleSort {
@@ -23,9 +25,9 @@ public class BubbleSort {
 
     /**
      * 交换数组arr里i位置和j位置的值
-     * @param arr 数组
-     * @param i 索引
-     * @param j 索引
+     * @param arr
+     * @param i
+     * @param j
      */
     public static void swap(int[] arr, int i, int j) {
         int tmp = arr[i];

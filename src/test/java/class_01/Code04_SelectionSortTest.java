@@ -1,13 +1,15 @@
-package sort;
+package class_01;
 
 import org.junit.Test;
 
-import static sort.BubbleSort.bubbleSort;
-import static sort.InsertionSort.insertionSort;
-import static sort.SelectionSort.*;
-import static sort.SelectionSort.printArray;
+import static class_01.Code04_SelectionSort.*;
 
-public class InsertionSortTest {
+/**
+ * @Date: 2023/4/22 15:50
+ * @Author: Sean Luo
+ * @Description:
+ */
+public class Code04_SelectionSortTest {
 
     @Test
     public void myTest() {
@@ -18,7 +20,7 @@ public class InsertionSortTest {
         for (int i = 0; i < testTime; i++) {
             int[] arr1 = generateRandomArray(maxSize, maxValue);
             int[] arr2 = copyArray(arr1);
-            insertionSort(arr1);
+            selectionSort(arr1);
             comparator(arr2);
             if (!isEqual(arr1, arr2)) {
                 succeed = false;

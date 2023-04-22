@@ -1,12 +1,11 @@
-package sort;
+package class_55;
 
 import org.junit.Test;
 
-import static sort.BubbleSort.bubbleSort;
-import static sort.SelectionSort.*;
-import static sort.SelectionSort.printArray;
 
-public class BubbleSortTest {
+import static class_55.SelectionSort.*;
+
+public class SelectionSortTest {
 
     @Test
     public void myTest() {
@@ -17,7 +16,7 @@ public class BubbleSortTest {
         for (int i = 0; i < testTime; i++) {
             int[] arr1 = generateRandomArray(maxSize, maxValue);
             int[] arr2 = copyArray(arr1);
-            bubbleSort(arr1);
+            selectionSort(arr1);
             comparator(arr2);
             if (!isEqual(arr1, arr2)) {
                 succeed = false;

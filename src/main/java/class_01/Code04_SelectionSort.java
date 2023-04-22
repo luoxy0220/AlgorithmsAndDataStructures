@@ -1,48 +1,46 @@
-package sort;
+package class_01;
 
 import java.util.Arrays;
 
 /**
- * 选择排序算法，基本思路是从待排序的元素中选出最小的一个元素，然后与待排序的第一个元素交换位置；
+ * @Date: 2023/4/22 15:48
+ * @Author: Sean Luo
+ * @Description: 选择排序，基本思路是从待排序的元素中选出最小的一个元素，然后与待排序的第一个元素交换位置；
  * 接着从剩余的元素中选择最小的一个元素，与待排序的第二个元素交换位置；以此类推，直到所有的元素都排序完毕。
  */
-public class SelectionSort {
+public class Code04_SelectionSort {
 
     public static void selectionSort(int[] arr) {
-        if (arr==null || arr.length<2) {
+        if (arr == null || arr.length < 2) {
             return;
         }
-        int length = arr.length;
-        for (int i=0; i<length-1; i++) {
-            // 在待排序的元素中选择最小的元素，并记录其下标
+        for (int i = 0; i < arr.length - 1; i++) {
             int minIndex = i;
-            // 遍历剩余的未排序元素
-            for (int j=i+1; j<length; j++) {
-                // 如果发现比当前记录的最小值更小的元素，则更新最小元素的下标
-                minIndex = arr[j]<arr[minIndex] ? j : minIndex;
+            for (int j = i + 1; j < arr.length; j++) {
+                if(arr[j] < arr[minIndex]) {
+                    minIndex = j;
+                }
             }
-            // 将选出的最小元素与待排序的第一个元素交换位置
             swap(arr, i, minIndex);
         }
     }
 
-    /**
-     * 交换数组arr里i位置和j位置的值
-     * @param arr 数组
-     * @param i 索引
-     * @param j 索引
-     */
     public static void swap(int[] arr, int i, int j) {
         int tmp = arr[i];
-        arr[i]  = arr[j];
-        arr[j]  = tmp;
+        arr[i] = arr[j];
+        arr[j] = tmp;
     }
 
+    // for test
     public static void comparator(int[] arr) {
         Arrays.sort(arr);
     }
 
+    // for test
     public static int[] generateRandomArray(int maxSize, int maxValue) {
+        // Math.random() [0,1)
+        // Math.random() * N [0,N)
+        // (int)(Math.random() * N) [0, N-1]
         int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
         for (int i = 0; i < arr.length; i++) {
             // [-? , +?]
@@ -51,15 +49,19 @@ public class SelectionSort {
         return arr;
     }
 
+    // for test
     public static int[] copyArray(int[] arr) {
         if (arr == null) {
             return null;
         }
         int[] res = new int[arr.length];
-        System.arraycopy(arr, 0, res, 0, arr.length);
+        for (int i = 0; i < arr.length; i++) {
+            res[i] = arr[i];
+        }
         return res;
     }
 
+    // for test
     public static boolean isEqual(int[] arr1, int[] arr2) {
         if ((arr1 == null && arr2 != null) || (arr1 != null && arr2 == null)) {
             return false;
@@ -78,12 +80,13 @@ public class SelectionSort {
         return true;
     }
 
+    // for test
     public static void printArray(int[] arr) {
         if (arr == null) {
             return;
         }
-        for (int j : arr) {
-            System.out.print(j + " ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
         System.out.println();
     }
