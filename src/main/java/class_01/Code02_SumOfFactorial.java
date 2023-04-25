@@ -32,8 +32,4 @@ public class Code02_SumOfFactorial {
         }
         return ans;
     }
-
-    public static void main(String[] args) {
-
-    }
 }
