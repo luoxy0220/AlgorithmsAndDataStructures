@@ -2,6 +2,8 @@ package class_55;
 
 import java.util.Arrays;
 
+import static utils.ArraysUtil.swap;
+
 /**
  * @Date: 2023/4/18 23:08
  * @Author: Sean Luo
@@ -26,18 +28,6 @@ public class SelectionSort {
             // 将选出的最小元素与待排序的第一个元素交换位置
             swap(arr, i, minIndex);
         }
-    }
-
-    /**
-     * 交换数组arr里i位置和j位置的值
-     * @param arr 数组
-     * @param i 索引
-     * @param j 索引
-     */
-    public static void swap(int[] arr, int i, int j) {
-        int tmp = arr[i];
-        arr[i]  = arr[j];
-        arr[j]  = tmp;
     }
 
     public static void comparator(int[] arr) {

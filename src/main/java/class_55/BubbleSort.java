@@ -1,5 +1,7 @@
 package class_55;
 
+import static utils.ArraysUtil.swap;
+
 /**
  * @Date: 2023/4/18 23:08
  * @Author: Sean Luo
@@ -21,17 +23,5 @@ public class BubbleSort {
                 }
             }
         }
-    }
-
-    /**
-     * 交换数组arr里i位置和j位置的值
-     * @param arr
-     * @param i
-     * @param j
-     */
-    public static void swap(int[] arr, int i, int j) {
-        int tmp = arr[i];
-        arr[i]  = arr[j];
-        arr[j]  = tmp;
     }
 }

@@ -1,5 +1,7 @@
 package class_02;
 
+import static utils.ArraysUtil.swap;
+
 /**
  * @Date: 2023/4/30 14:13
  * @Author: Sean Luo
@@ -24,18 +26,6 @@ public class Code03_Comp {
             }
             swap(arr, i, minIndex);
         }
-    }
-
-    /**
-     * 将数组中i位置和j位置的元素交换位置
-     * @param arr
-     * @param i
-     * @param j
-     */
-    public static void swap(int[] arr, int i, int j) {
-        int tmp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = tmp;
     }
 
     /**

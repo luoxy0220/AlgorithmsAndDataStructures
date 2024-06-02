@@ -2,6 +2,8 @@ package class_01;
 
 import java.util.Arrays;
 
+import static utils.ArraysUtil.swap;
+
 /**
  * @Date: 2023/4/22 15:48
  * @Author: Sean Luo
@@ -23,12 +25,6 @@ public class Code04_SelectionSort {
             }
             swap(arr, i, minIndex);
         }
-    }
-
-    public static void swap(int[] arr, int i, int j) {
-        int tmp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = tmp;
     }
 
     // for test

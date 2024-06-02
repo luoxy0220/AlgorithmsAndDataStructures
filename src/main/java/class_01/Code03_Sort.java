@@ -1,5 +1,7 @@
 package class_01;
 
+import static utils.ArraysUtil.swap;
+
 /**
  * @Date: 2023/4/21 20:19
  * @Author: Sean Luo
@@ -16,9 +18,9 @@ public class Code03_Sort {
         if (arr == null || arr.length < 2) {
             return;
         }
-        // 从0 ~ n-1范围上选出最小的数，和0位置上的数进行交换；
-        // 从1 ~ n-1范围上选出最小的数，和1位置上的数进行交换；
-        // 从i ~ n-1范围上选出最小的数，和i位置上的数进行交换；
+        // 从 0 ~ n-1 范围上选出最小的数，和 0 位置上的数进行交换；
+        // 从 1 ~ n-1 范围上选出最小的数，和 1 位置上的数进行交换；
+        // 从 i ~ n-1 范围上选出最小的数，和 i 位置上的数进行交换；
         int n = arr.length;
         for (int i = 0; i < n; i++) {
             // 假定i位置上的数是数组中最小的数，把索引记为minValueIndex
@@ -29,18 +31,6 @@ public class Code03_Sort {
             }
             swap(arr,i,minValueIndex);
         }
-    }
-
-    /**
-     * 交换数组arr中i位置和j位置上的元素。
-     * @param arr
-     * @param i
-     * @param j
-     */
-    public static void swap(int[] arr, int i, int j) {
-        int tmp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = tmp;
     }
 
     /**
@@ -105,7 +95,7 @@ public class Code03_Sort {
             return;
         }
         // 0 ~ 1是有序的
-        // 0 ~ 2，此时0 ~ 1位置上是有序的，需要将2位置上的数与0 ~ 1位置上的数进行比较，然后按照大小顺序，插入到0 ~ 1中
+        // 0 ~ 2，此时0  ~ 1位置上是有序的，需要将2位置上的数与0 ~ 1位置上的数进行比较，然后按照大小顺序，插入到0 ~ 1中
         // 0 ~ 3，此时0 ~ 2位置上是有序的，需要将3位置上的数与0 ~ 2位置上的数进行比较，然后按照大小顺序，插入到0 ~ 2中
         // 0 ~ n-1，此时0 ~ n-2位置上是有序的，需要将n-1位置上的数与0 ~ n-2位置上的数进行比较，然后按照大小顺序，插入到0 ~ n-2中
         int n = arr.length;
