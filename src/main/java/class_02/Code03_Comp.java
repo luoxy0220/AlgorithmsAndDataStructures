@@ -29,21 +29,6 @@ public class Code03_Comp {
     }
 
     /**
-     * 插入排序
-     * @param arr 需排序的数组
-     */
-    public static void insertionSort(int[] arr) {
-        if (arr == null || arr.length < 2) {
-            return;
-        }
-        for (int i = 1; i < arr.length; i++) { // 0 ~ i 做到有序
-            for (int j = i - 1; j >= 0 && arr[j] > arr[j + 1]; j--) {
-                swap(arr, j, j + 1);
-            }
-        }
-    }
-
-    /**
      * 返回一个数组arr，arr长度[0,maxLen-1],arr中的每个值[0,maxValue-1]
      * @param maxLen 数组长度为maxLen-1
      * @param maxValue 数组中的最大值maxValue-1

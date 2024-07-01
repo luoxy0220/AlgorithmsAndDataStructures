@@ -2,25 +2,12 @@ package class_01;
 
 import java.util.Arrays;
 
-import static utils.ArraysUtil.swap;
-
 /**
  * @Date: 2023/4/22 16:01
  * @Author: Sean Luo
  * @Description: 插入排序，基本思路是将一个待排序的元素插入到已排序序列的合适位置，从而得到一个新的有序序列。
  */
 public class Code06_InsertionSort {
-
-    public static void insertionSort(int[] arr) {
-        if (arr == null || arr.length < 2) {
-            return;
-        }
-        for (int i = 1; i < arr.length; i++) { // 0 ~ i 做到有序
-            for (int j = i - 1; j >= 0 && arr[j] > arr[j + 1]; j--) {
-                swap(arr, j, j + 1);
-            }
-        }
-    }
 
     public static void comparator(int[] arr) {
         Arrays.sort(arr);
@@ -65,16 +52,5 @@ public class Code06_InsertionSort {
             }
         }
         return true;
-    }
-
-    
-    public static void printArray(int[] arr) {
-        if (arr == null) {
-            return;
-        }
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
     }
 }

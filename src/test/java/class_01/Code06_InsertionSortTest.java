@@ -3,6 +3,8 @@ package class_01;
 import org.junit.Test;
 
 import static class_01.Code06_InsertionSort.*;
+import static utils.ArraysUtil.insertionSort;
+import static utils.ArraysUtil.printArray;
 
 /**
  * @Date: 2023/4/22 16:03

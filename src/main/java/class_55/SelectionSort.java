@@ -69,14 +69,4 @@ public class SelectionSort {
         }
         return true;
     }
-
-    public static void printArray(int[] arr) {
-        if (arr == null) {
-            return;
-        }
-        for (int j : arr) {
-            System.out.print(j + " ");
-        }
-        System.out.println();
-    }
 }
