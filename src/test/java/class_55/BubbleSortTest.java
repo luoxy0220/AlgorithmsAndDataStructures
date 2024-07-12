@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static class_55.BubbleSort.bubbleSort;
 import static class_55.SelectionSort.*;
-import static class_55.SelectionSort.printArray;
+import static utils.ArraysUtil.printArray;
 
 public class BubbleSortTest {
 

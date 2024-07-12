@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static class_55.InsertionSort.insertionSort;
 import static class_55.SelectionSort.*;
-import static class_55.SelectionSort.printArray;
+import static utils.ArraysUtil.printArray;
 
 public class InsertionSortTest {
 

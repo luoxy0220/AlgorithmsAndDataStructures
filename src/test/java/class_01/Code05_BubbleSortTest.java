@@ -3,6 +3,7 @@ package class_01;
 import org.junit.Test;
 
 import static class_01.Code05_BubbleSort.*;
+import static utils.ArraysUtil.*;
 
 /**
  * @Date: 2023/4/22 15:56
@@ -22,7 +23,7 @@ public class Code05_BubbleSortTest {
             int[] arr2 = copyArray(arr1);
             bubbleSort(arr1);
             comparator(arr2);
-            if (!isEqual(arr1, arr2)) {
+            if (isEqual(arr1, arr2)) {
                 succeed = false;
                 break;
             }

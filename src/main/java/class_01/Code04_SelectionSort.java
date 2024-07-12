@@ -1,7 +1,5 @@
 package class_01;
 
-import java.util.Arrays;
-
 import static utils.ArraysUtil.swap;
 
 /**
@@ -13,6 +11,7 @@ import static utils.ArraysUtil.swap;
 public class Code04_SelectionSort {
 
     public static void selectionSort(int[] arr) {
+        // 边界条件
         if (arr == null || arr.length < 2) {
             return;
         }

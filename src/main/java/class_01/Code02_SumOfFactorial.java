@@ -9,7 +9,7 @@ public class Code02_SumOfFactorial {
 
     public static long f1(int n) {
         long ans = 0;
-        for (int i=1; i<=n; i++) {
+        for (int i = 1; i <= n; i++) {
             ans += factorial(i);
         }
         return ans;
@@ -17,7 +17,7 @@ public class Code02_SumOfFactorial {
 
     public static long factorial(int n) {
         int ans = 1;
-        for (int i=1; i<=n; i++) {
+        for (int i = 1; i <= n; i++) {
             ans *= i;
         }
         return ans;

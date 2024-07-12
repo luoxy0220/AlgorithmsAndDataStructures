@@ -1,7 +1,5 @@
 package class_01;
 
-import java.util.Arrays;
-
 import static utils.ArraysUtil.swap;
 
 /**
@@ -12,6 +10,7 @@ import static utils.ArraysUtil.swap;
 public class Code05_BubbleSort {
 
     public static void bubbleSort(int[] arr) {
+        // 边界条件
         if (arr == null || arr.length < 2) {
             return;
         }

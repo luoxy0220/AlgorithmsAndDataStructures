@@ -23,7 +23,7 @@ public class Code04_SelectionSortTest {
             int[] arr2 = copyArray(arr1);
             selectionSort(arr1);
             comparator(arr2);
-            if (!isEqual(arr1, arr2)) {
+            if (isEqual(arr1, arr2)) {
                 succeed = false;
                 printArray(arr1);
                 printArray(arr2);

@@ -2,9 +2,8 @@ package class_01;
 
 import org.junit.Test;
 
-import static class_01.Code06_InsertionSort.*;
-import static utils.ArraysUtil.insertionSort;
-import static utils.ArraysUtil.printArray;
+import static class_01.Code06_InsertionSort.insertionSort;
+import static utils.ArraysUtil.*;
 
 /**
  * @Date: 2023/4/22 16:03
@@ -24,7 +23,7 @@ public class Code06_InsertionSortTest {
             int[] arr2 = copyArray(arr1);
             insertionSort(arr1);
             comparator(arr2);
-            if (!isEqual(arr1, arr2)) {
+            if (isEqual(arr1, arr2)) {
                 // 打印arr1
                 // 打印arr2
                 succeed = false;

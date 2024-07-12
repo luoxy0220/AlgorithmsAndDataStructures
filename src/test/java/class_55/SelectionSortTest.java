@@ -4,6 +4,7 @@ import org.junit.Test;
 
 
 import static class_55.SelectionSort.*;
+import static utils.ArraysUtil.printArray;
 
 public class SelectionSortTest {
 

@@ -34,17 +34,6 @@ public class Code03_Sort {
     }
 
     /**
-     * 打印数组arr。
-     * @param arr - 待排序的数组
-     */
-    public static void print(int[] arr) {
-        for (int j : arr) {
-            System.out.print(j + " ");
-        }
-        System.out.println();
-    }
-
-    /**
      * 冒泡排序
      * @param arr - 待排序的数组
      */
@@ -57,7 +46,7 @@ public class Code03_Sort {
         // 从0 ~ n-2对数组元素进行比较，如果0位置元素大于1位置元素，那么把两个元素进行交换，循环往复，一直到n-2位置
         // 从0 ~ n-3对数组元素进行比较，如果0位置元素大于1位置元素，那么把两个元素进行交换，循环往复，一直到n-3位置
         int n = arr.length;
-        for (int end = arr.length - 1; end >= 0; end --) {
+        for (int end = n - 1; end >= 0; end --) {
             for (int i = 0; i < end; i++) {
                 if (arr[i] > arr[i + 1]) {
                     swap(arr, i, i + 1);
