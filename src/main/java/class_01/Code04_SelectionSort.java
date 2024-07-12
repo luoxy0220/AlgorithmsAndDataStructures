@@ -1,7 +1,5 @@
 package class_01;
 
-import java.util.Arrays;
-
 import static utils.ArraysUtil.swap;
 
 /**
