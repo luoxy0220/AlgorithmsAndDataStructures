@@ -11,22 +11,22 @@ public class Code03_Sort {
 
     /**
      * 选择排序
-     * @param arr
+     * @param arr - 待排序的数组
      */
     public static void selectionSort(int[] arr) {
         // 边界条件
         if (arr == null || arr.length < 2) {
             return;
         }
-        // 从 0 ~ n-1 范围上选出最小的数，和 0 位置上的数进行交换；
-        // 从 1 ~ n-1 范围上选出最小的数，和 1 位置上的数进行交换；
-        // 从 i ~ n-1 范围上选出最小的数，和 i 位置上的数进行交换；
+        // 从 0 ~ n-1 范围上选出最小的数，和 0 位置上的数进行交换，
+        // 从 1 ~ n-1 范围上选出最小的数，和 1 位置上的数进行交换，
+        // 从 i ~ n-1 范围上选出最小的数，和 i 位置上的数进行交换。
         int n = arr.length;
         for (int i = 0; i < n; i++) {
-            // 假定i位置上的数是数组中最小的数，把索引记为minValueIndex
+            // 假定i位置上的数是数组中最小的数，把索引记为minValueIndex。
             int minValueIndex = i;
             for (int j = i + 1; j < n; j++) {
-                // 将minValueIndex位置上的数与j位置后面的数进行比较，如果小于，则索引更新为就，否则，保持不变
+                // 将minValueIndex位置上的数与j位置后面的数进行比较，如果小于，则索引更新为j，否则，保持不变。
                 minValueIndex = arr[j] < arr[minValueIndex] ? j : minValueIndex;
             }
             swap(arr,i,minValueIndex);
@@ -35,7 +35,7 @@ public class Code03_Sort {
 
     /**
      * 打印数组arr。
-     * @param arr
+     * @param arr - 待排序的数组
      */
     public static void print(int[] arr) {
         for (int j : arr) {
@@ -46,7 +46,7 @@ public class Code03_Sort {
 
     /**
      * 冒泡排序
-     * @param arr
+     * @param arr - 待排序的数组
      */
     public static void bubbleSort(int[] arr) {
         // 边界条件
@@ -68,7 +68,7 @@ public class Code03_Sort {
 
     /**
      * 插入排序
-     * @param arr
+     * @param arr - 待排序的数组
      */
     public static void insertSort1(int[] arr) {
         // 边界条件
@@ -94,10 +94,10 @@ public class Code03_Sort {
         if (arr == null || arr.length < 2) {
             return;
         }
-        // 0 ~ 1是有序的
-        // 0 ~ 2，此时0  ~ 1位置上是有序的，需要将2位置上的数与0 ~ 1位置上的数进行比较，然后按照大小顺序，插入到0 ~ 1中
-        // 0 ~ 3，此时0 ~ 2位置上是有序的，需要将3位置上的数与0 ~ 2位置上的数进行比较，然后按照大小顺序，插入到0 ~ 2中
-        // 0 ~ n-1，此时0 ~ n-2位置上是有序的，需要将n-1位置上的数与0 ~ n-2位置上的数进行比较，然后按照大小顺序，插入到0 ~ n-2中
+        // 0 ~ 1是有序的，
+        // 0 ~ 2，此时0 ~ 1位置上是有序的，需要将2位置上的数与0 ~ 1位置上的数进行比较，然后按照大小顺序，插入到0 ~ 1中，
+        // 0 ~ 3，此时0 ~ 2位置上是有序的，需要将3位置上的数与0 ~ 2位置上的数进行比较，然后按照大小顺序，插入到0 ~ 2中，
+        // 0 ~ n-1，此时0 ~ n-2位置上是有序的，需要将n-1位置上的数与0 ~ n-2位置上的数进行比较，然后按照大小顺序，插入到0 ~ n-2中。
         int n = arr.length;
         for (int end = 1; end < n; end++){
             for (int pre = end - 1; pre >= 0 && arr[pre] > arr[pre + 1]; pre--) {
