@@ -47,26 +47,6 @@ public class Code04_FindLocalMinimum {
     }
 
     /**
-     * 生成指定长度的随机整数数组
-     * @param maxLen-数组最大长度
-     * @param maxValue-随机数最大值
-     * @return 生成的随机整数数组
-     */
-    public static int[] randomArray(int maxLen, int maxValue) {
-        int len = (int) (Math.random() * maxLen);
-        int[] arr = new int[len];
-        if (len > 0) {
-            arr[0] = (int) (Math.random() * maxValue);
-            for (int i = 1; i < len; i++) {
-                do {
-                    arr[i] = (int) (Math.random() * maxValue);
-                } while (arr[i] == arr[i - 1]);
-            }
-        }
-        return arr;
-    }
-
-    /**
      * 检查给定的数组中的最小值索引是否为局部最小值
      * @param arr-给定的数组
      * @param minIndex-最小值的索引
@@ -81,16 +61,5 @@ public class Code04_FindLocalMinimum {
         boolean leftBigger = left < 0 || arr[left] > arr[minIndex];
         boolean rightBigger = right >= arr.length || arr[right] > arr[minIndex];
         return leftBigger && rightBigger;
-    }
-
-    /**
-     * 打印整型数组
-     * @param arr-待打印的整型数组
-     */
-    public static void printArray(int[] arr) {
-        for (int num : arr) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
     }
 }

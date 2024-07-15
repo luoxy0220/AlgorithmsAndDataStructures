@@ -3,6 +3,8 @@ package class_03;
 import org.junit.Test;
 
 import static class_03.Code04_FindLocalMinimum.*;
+import static utils.ArraysUtil.generateRandomArray;
+import static utils.ArraysUtil.printArray;
 
 /**
  * @Date: 2023/5/14 19:23
@@ -18,7 +20,7 @@ public class Code04_FindLocalMinimumTest {
         int testTime = 1000000;
         System.out.println("测试开始");
         for (int i = 0; i < testTime; i++) {
-            int[] arr = randomArray(maxLen, maxValue);
+            int[] arr = generateRandomArray(maxLen, maxValue);
             int ans = findLocalMinimum(arr);
             if (!check(arr, ans)) {
                 printArray(arr);

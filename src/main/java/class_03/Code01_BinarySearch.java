@@ -52,26 +52,4 @@ public class Code01_BinarySearch {
         }
         return false;
     }
-
-    /**
-     * 生成一个随机数组
-     * @param maxSize-数组的最大长度
-     * @param maxValue-数组中元素的最大值（不包含最大值本身，最小值默认为负数）
-     * @return 生成的随机数组
-     */
-    public static int[] generateRandomArray(int maxSize, int maxValue) {
-        // 创建一个长度为maxSize范围内的随机数组
-        int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
-        // 遍历数组中的每一个元素
-        for (int i = 0; i < arr.length; i++) {
-            // 为当前元素赋一个在[-maxValue, maxValue]范围内的随机值
-            // Math.random()生成[0,1)范围内的随机数
-            // maxValue * Math.random()生成[0, maxValue)范围内的随机数
-            // (maxValue + 1) * Math.random()生成[0, maxValue+1)范围内的随机数
-            // 将两个随机数相减得到在[-maxValue, maxValue]范围内的随机数
-            arr[i] = (int) ((maxValue + 1) * Math.random()) - (int) (maxValue * Math.random());
-        }
-        // 返回生成的随机数组
-        return arr;
-    }
 }

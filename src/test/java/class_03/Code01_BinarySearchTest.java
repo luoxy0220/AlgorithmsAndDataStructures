@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.util.Arrays;
 
 import static class_03.Code01_BinarySearch.*;
+import static utils.ArraysUtil.generateRandomArray;
 
 /**
  * @Date: 2023/5/1 17:42

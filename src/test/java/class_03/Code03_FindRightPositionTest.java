@@ -5,6 +5,8 @@ import org.junit.Test;
 import java.util.Arrays;
 
 import static class_03.Code03_FindRightPosition.*;
+import static utils.ArraysUtil.generateRandomArray;
+import static utils.ArraysUtil.printArray;
 
 /**
  * @Date: 2023/5/11 21:34
