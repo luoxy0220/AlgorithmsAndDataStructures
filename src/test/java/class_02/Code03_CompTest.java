@@ -3,7 +3,7 @@ package class_02;
 import org.junit.Test;
 
 import static class_02.Code03_Comp.*;
-import static org.junit.Assert.*;
+import static utils.ArraysUtil.copyArray;
 
 /**
  * @Date: 2023/4/30 14:21

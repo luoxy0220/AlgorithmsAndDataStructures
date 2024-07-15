@@ -44,19 +44,6 @@ public class Code03_Comp {
     }
 
     /**
-     * 复制数组
-     * @param arr 被复制的数组
-     * @return 复制后的数组
-     */
-    public static int[] copyArray(int[] arr) {
-        int[] ans = new int[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            ans[i] = arr[i];
-        }
-        return ans;
-    }
-
-    /**
      * 数组是否是有序的
      * @param arr
      * @return
