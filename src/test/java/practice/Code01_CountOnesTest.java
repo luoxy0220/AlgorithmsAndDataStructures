@@ -1,8 +1,8 @@
-package practice_bitOperation;
+package practice;
 
 import org.junit.Test;
 
-import static practice_bitOperation.Code01_CountOnes.countOnes;
+import static practice.bitOperation.Code01_CountOnes.countOnes;
 import static class_01.Code01_PrintBinary.print;
 
 /**

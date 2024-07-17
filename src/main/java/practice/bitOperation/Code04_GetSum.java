@@ -1,4 +1,4 @@
-package practice_bitOperation;
+package practice.bitOperation;
 
 /**
  * @Date: 2023/4/25 22:12
@@ -17,10 +17,4 @@ public class Code04_GetSum {
         }
         return m;
     }
-    /**
-     *  10111011
-     *  10110010
-     *  & 10110010
-     *  ^ 10001001
-     */
 }

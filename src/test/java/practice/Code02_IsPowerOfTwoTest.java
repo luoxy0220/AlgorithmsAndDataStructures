@@ -1,8 +1,8 @@
-package practice_bitOperation;
+package practice;
 
 import org.junit.Test;
 
-import static practice_bitOperation.Code02_IsPowerOfTwo.isPowerOfTwo;
+import static practice.bitOperation.Code02_IsPowerOfTwo.isPowerOfTwo;
 
 /**
  * @Date: 2023/4/24 22:01

@@ -1,16 +1,16 @@
-package practice_bitOperation;
+package practice;
 
 import org.junit.Test;
 
-import static practice_bitOperation.Code03_HammingDistance.hammingDistance;
 import static class_01.Code01_PrintBinary.print;
+import static practice.bitOperation.Code04_GetSum.getSum;
 
 /**
- * @Date: 2023/4/25 21:47
+ * @Date: 2023/4/25 22:45
  * @Author: Sean Luo
  * @Description:
  */
-public class Code03_HammingDistanceTest {
+public class Code04_GetSumTest {
 
     @Test
     public void myTest() {
@@ -19,6 +19,7 @@ public class Code03_HammingDistanceTest {
 
         print(m);
         print(n);
-        System.out.println(hammingDistance(m, n));
+        System.out.println(getSum(m, n));
+        System.out.println(m+n);
     }
 }

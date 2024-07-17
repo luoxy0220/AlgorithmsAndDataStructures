@@ -1,4 +1,4 @@
-package practice_bitOperation;
+package practice.bitOperation;
 
 /**
  * @Date: 2023/4/24 21:28
